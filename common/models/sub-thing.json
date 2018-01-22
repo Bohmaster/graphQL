@@ -1,0 +1,24 @@
+{
+  "name": "SubThing",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "thing": {
+      "type": "belongsTo",
+      "model": "Thing",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

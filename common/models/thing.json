@@ -1,0 +1,25 @@
+{
+  "name": "Thing",
+  "plural": "things",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "subThings": {
+      "type": "hasMany",
+      "model": "SubThing",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
